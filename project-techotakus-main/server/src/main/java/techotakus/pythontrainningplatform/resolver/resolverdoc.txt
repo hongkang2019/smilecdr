@@ -1,0 +1,6 @@
+Here are ideas about how package "resolver" is designed:
+    1. Resolver plays the role of Controller in a traditional MVC and 3 tiers design. Resolvers do not user the
+    controller annotation, as the routing to different resolvers is depending on the function names. Resolvers are
+    responsible for calling corresponding services to deal with the request coming in and return the data to frontend.
+
+    2. For a good design, do not use DAO in resolvers as we treat it as a controller layer.
